@@ -1,0 +1,38 @@
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+
+  &--current {
+    position: relative;
+
+    color: var(--accent-txt-cl);
+  }
+
+  &--current::after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-txt-cl);
+  }
+}
+
+.nav__link,
+.contacts__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--animation);
+}

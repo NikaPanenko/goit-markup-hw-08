@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  @include logo;
+
+  margin-right: 93px;
+
+  color: var(--dark-txt-cl);
+}
